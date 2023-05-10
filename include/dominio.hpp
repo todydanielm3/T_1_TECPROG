@@ -3,17 +3,67 @@
 
 #include <string>
 
-class Dominio {
+class Unidade {
+  private:
+    std::string codigo;
+
   public:
-    Dominio();
-    virtual ~Dominio();
+    Unidade();
+    ~Unidade();
 
-    //Metodos virtuais puros que devem ser implementados pelas classes filhas
-    virtual bool validar() const = 0;
-    virtual std::string obterDescricao() const = 0;
+    void setCodigo(std::string& codigo);
+    std::string getCodigo() const;
+};
+
+class Fumaca {
+  private:
+    std::string codigo;
+
+    public:
+      Fumaca();
+      ~Fumaca();
+
+      void setCodigo(std::string& codigo);
+      std::string getCodigo() const;
+};
+
+class Sistema {
+  private:
+    std::string codigo;
+
+  public:
+    Sistema();
+    ~Sistema();
+
+    void setCodigo(std::string& codigo);
+    std::string getCodigo() const;
+};
 
 
+class Regressao {
+  private:
+    std::string codigo;
+
+  public:
+    Regressao();
+    ~Regressao();
+
+    void setCodigo(std::string& codigo);
+    std::string getCodigo() const;
+};
+
+class Aceitacao {
+  private:
+    std::string codigo;
+
+  public:
+    Aceitacao();
+    ~Aceitacao();
+
+    void setCodigo(std::string& codigo);
+    std::string getCodigo() const;
 };
 
 #endif // DOMINIO_HPP
+
 
