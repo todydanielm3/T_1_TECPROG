@@ -1,3 +1,8 @@
+/**
+ * @file dominio.hpp
+ * @brief Arquivo com a declaração das classes de domínio.
+ */
+
 #ifndef DOMINIO_HPP
 #define DOMINIO_HPP
 
